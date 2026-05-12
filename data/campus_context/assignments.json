@@ -1,0 +1,31 @@
+{
+  "assignments": [
+    {
+      "id": "a1",
+      "title": "Project 3: Self-Balancing Binary Search Tree",
+      "due": "May 12 at 11:59 PM",
+      "description": "Implement an AVL tree with insert, delete, and rebalancing. Webb will run MOSS plagiarism detection on every submission. Zero tolerance for AI-generated code.",
+      "weight": "20% of final grade",
+      "tags": ["assignments", "deadlines", "class", "grading", "submissions"],
+      "npc_relevance": ["professor", "ta"]
+    },
+    {
+      "id": "a2",
+      "title": "Lab 7: Graph Traversal",
+      "due": "May 10 at 11:59 PM",
+      "description": "Implement BFS and DFS with full test coverage. Kevin's autograder has 47 edge cases. He is not sorry.",
+      "weight": "5% of final grade",
+      "tags": ["assignments", "deadlines", "grading", "submissions"],
+      "npc_relevance": ["ta", "friend"]
+    },
+    {
+      "id": "a3",
+      "title": "Research Paper Draft: Algorithm Analysis",
+      "due": "May 14",
+      "description": "5-page technical paper analyzing the time/space complexity of your chosen algorithm. In-text citations required. Webb once docked a full letter grade for a bibliography with URLs only.",
+      "weight": "10% of final grade",
+      "tags": ["assignments", "deadlines", "class"],
+      "npc_relevance": ["professor"]
+    }
+  ]
+}

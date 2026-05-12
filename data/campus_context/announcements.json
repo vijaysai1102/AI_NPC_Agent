@@ -1,0 +1,32 @@
+{
+  "announcements": [
+    {
+      "id": "an1",
+      "title": "Late Submission Policy — Final Reminder",
+      "content": "Dr. Webb has reiterated: late submissions receive a 25% deduction per day. After 4 days, the submission is not accepted at all. No exceptions, no extensions unless medical documentation is provided.",
+      "tags": ["assignments", "deadlines", "class"],
+      "npc_relevance": ["professor", "ta"]
+    },
+    {
+      "id": "an2",
+      "title": "Kevin's Office Hours Update",
+      "content": "Kevin Park's office hours have moved to Thursdays 2–4 PM in CS Building Room 203. He will NOT be answering emails during grading week. He is very clear about this.",
+      "tags": ["class", "grading"],
+      "npc_relevance": ["ta"]
+    },
+    {
+      "id": "an3",
+      "title": "Academic Integrity Reminder — MOSS Detection Active",
+      "content": "The CS Department will use MOSS plagiarism detection on all code submissions this semester. Both the copier and the student who shared code will face academic integrity violations.",
+      "tags": ["assignments", "class", "department"],
+      "npc_relevance": ["professor", "ta"]
+    },
+    {
+      "id": "an4",
+      "title": "Tutoring Center Extended Hours",
+      "content": "The CS tutoring center is open until midnight during the week before midterms. Kevin recommends using it instead of emailing him at 2 AM.",
+      "tags": ["class", "exams", "social"],
+      "npc_relevance": ["ta", "friend"]
+    }
+  ]
+}

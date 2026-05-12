@@ -1,0 +1,39 @@
+{
+  "rumors": [
+    {
+      "id": "r1",
+      "content": "Word is that Webb failed 30% of the class last semester. No curve. Zero mercy. A senior told me he literally said 'a C is a gift' when asked about grade distribution.",
+      "source": "senior_students",
+      "tags": ["rumors", "gossip", "class", "drama"],
+      "npc_relevance": ["friend", "ta"]
+    },
+    {
+      "id": "r2",
+      "content": "Kevin cried — allegedly — while grading Project 2 because multiple students left ChatGPT boilerplate comments in their code. One submission literally said 'As an AI language model, I cannot...' in a code comment.",
+      "source": "lab_assistant",
+      "tags": ["rumors", "gossip", "grading", "drama"],
+      "npc_relevance": ["friend", "ta"]
+    },
+    {
+      "id": "r3",
+      "content": "Priya has already predicted the midterm will have a trick DP problem disguised as a recursion question. She's been right about the last two exams.",
+      "source": "study_group",
+      "tags": ["rumors", "gossip", "exams", "social"],
+      "npc_relevance": ["friend", "professor"]
+    },
+    {
+      "id": "r4",
+      "content": "There's a leaked 'study guide' circulating on Discord that supposedly came from last year's TA. Kevin has NOT confirmed or denied this. Suspicious.",
+      "source": "discord_server",
+      "tags": ["rumors", "gossip", "exams", "drama"],
+      "npc_relevance": ["friend"]
+    },
+    {
+      "id": "r5",
+      "content": "Webb and the Dean apparently had a heated argument about AI tool policies in the curriculum. Webb wants to ban all AI assistants from CS coursework. The Dean disagreed.",
+      "source": "dept_secretary",
+      "tags": ["rumors", "gossip", "department", "drama"],
+      "npc_relevance": ["friend", "ta"]
+    }
+  ]
+}

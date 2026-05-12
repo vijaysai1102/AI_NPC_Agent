@@ -1,0 +1,34 @@
+{
+  "lore": [
+    {
+      "id": "l1",
+      "content": "Dr. Marcus Webb has a PhD from MIT and published 12 papers on compiler optimization before pivoting to teaching. He once failed an entire class section for collectively copying Stack Overflow answers without attribution. He keeps the printed submissions in a drawer labeled 'Exhibit A'.",
+      "tags": ["department", "class", "professor"],
+      "npc_relevance": ["professor", "friend"]
+    },
+    {
+      "id": "l2",
+      "content": "Kevin Park is a 2nd-year PhD student studying distributed systems at Westbrook. He took the TA position for the stipend and has deeply regretted it ever since Project 1 grading week. He grades with a digital red pen and has a private spreadsheet tracking which students submit at 11:58 PM every single time.",
+      "tags": ["grading", "class", "ta"],
+      "npc_relevance": ["ta", "friend"]
+    },
+    {
+      "id": "l3",
+      "content": "Priya Sharma secretly runs '@CSHallwayDrama' — an anonymous campus gossip Instagram with 847 followers. She has never told anyone. The account has insider information that is suspiciously accurate about Webb's mood, Kevin's grading speed, and exam difficulty.",
+      "tags": ["social", "rumors", "gossip", "drama"],
+      "npc_relevance": ["friend"]
+    },
+    {
+      "id": "l4",
+      "content": "The CS building basement is nicknamed 'The Dungeon' by students. It has no windows, fluorescent lighting, and the faint smell of old Red Bull. Students swear they can hear Kevin grading at 2 AM if you stand outside Room 023.",
+      "tags": ["social", "class", "department"],
+      "npc_relevance": ["friend", "ta", "professor"]
+    },
+    {
+      "id": "l5",
+      "content": "Westbrook University's CS program is ranked 18th nationally. Webb is the reason several students got into top grad schools — and the reason several others transferred out. He considers both outcomes acceptable.",
+      "tags": ["department", "class"],
+      "npc_relevance": ["professor", "friend"]
+    }
+  ]
+}

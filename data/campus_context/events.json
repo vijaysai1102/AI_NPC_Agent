@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "id": "ev1",
+      "title": "CS301 Midterm Exam",
+      "description": "Midterm is scheduled for May 15. Covers everything through Graph Algorithms. Worth 40% of final grade. Webb said there will be a 'conceptual surprise' question.",
+      "tags": ["exams", "class", "assignments"],
+      "npc_relevance": ["professor", "ta", "friend"]
+    },
+    {
+      "id": "ev2",
+      "title": "Annual Campus Hackathon",
+      "description": "24-hour hackathon on May 20. $500 first prize. Max team of 4. Registration closes May 12. CS building basement is the venue — aka The Dungeon.",
+      "tags": ["events", "social", "hackathon"],
+      "npc_relevance": ["friend", "professor"]
+    },
+    {
+      "id": "ev3",
+      "title": "CS Department Faculty BBQ",
+      "description": "Optional faculty-student BBQ on Friday afternoon. Webb will absolutely notice who attends. Free food though.",
+      "tags": ["events", "social", "department"],
+      "npc_relevance": ["friend", "professor", "ta"]
+    },
+    {
+      "id": "ev4",
+      "title": "Late Night Study Session",
+      "description": "Unofficial all-nighter study session in Lab 204 before the midterm. Priya is organizing it. Kevin said he might bring coffee. Don't tell Webb.",
+      "tags": ["events", "social", "exams"],
+      "npc_relevance": ["friend", "ta"]
+    }
+  ]
+}
