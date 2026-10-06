@@ -11,7 +11,7 @@ DB_PATH = DATA_DIR / "campus.db"
 NPCS_PATH = DATA_DIR / "npcs.json"
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b")
 
 MEMORY_CONTEXT_COUNT = 5
 RAG_TOP_K = 3

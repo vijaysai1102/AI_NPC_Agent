@@ -30,6 +30,11 @@ def generate_response(prompt: str) -> dict:
         err = str(e)
         if "429" in err or "rate" in err.lower():
             raise QuotaExceededError("Groq rate limit hit. Wait a moment and try again.")
+        if "404" in err or "model_not_found" in err or "does not exist" in err:
+            raise ModelNotFoundError(
+                f"Groq model '{GROQ_MODEL}' was not found or has been deprecated. "
+                "Please update GROQ_MODEL in your .env or Streamlit secrets (recommended: 'qwen/qwen3.8-27b')."
+            )
         raise
 
 
@@ -65,4 +70,8 @@ def ping() -> str:
 
 
 class QuotaExceededError(Exception):
+    pass
+
+
+class ModelNotFoundError(Exception):
     pass

@@ -5,7 +5,7 @@ from core.memory_manager import get_recent_memories, save_memory, save_chat_mess
 from core.emotion_engine import get_emotions, update_emotions
 from core.relationship_engine import get_relationship, update_relationship, increment_interactions
 from core.rag_retriever import retrieve_context
-from ai.gemini_client import generate_response, QuotaExceededError
+from ai.gemini_client import generate_response, QuotaExceededError, ModelNotFoundError
 from ai.prompt_builder import build_prompt
 from ai.opening_message import generate_opening
 from ui.npc_card import render_npc_card
@@ -184,8 +184,8 @@ with col_chat:
             st.session_state.chat_histories[npc_id] = [{"role": "npc", "content": opening}]
             st.session_state.opening_sent.add(npc_id)
             save_chat_message(npc_id, "npc", opening)
-        except QuotaExceededError as e:
-            st.error(f"**API Quota Error**\n\n{e}")
+        except (QuotaExceededError, ModelNotFoundError) as e:
+            st.error(f"**API Error**\n\n{e}")
             st.stop()
 
     # Render conversation history
@@ -230,8 +230,8 @@ with col_chat:
                     result = generate_response(prompt)
                 reply = result.get("reply", "...")
                 st.write(reply)
-            except QuotaExceededError as e:
-                st.error(f"**API Quota Error**\n\n{e}")
+            except (QuotaExceededError, ModelNotFoundError) as e:
+                st.error(f"**API Error**\n\n{e}")
                 history.pop()  # remove the user message we added
                 st.stop()
 

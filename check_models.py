@@ -6,8 +6,9 @@ import os
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
+model = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b")
 response = client.chat.completions.create(
-    model="llama-3.1-8b-instant",
+    model=model,
     messages=[{"role": "user", "content": "Say hello in one word."}],
     max_tokens=10
 )

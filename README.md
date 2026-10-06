@@ -2,7 +2,7 @@
 
 > **An interactive campus world where AI characters remember you, feel emotions, and evolve real relationships over time.**
 
-Built with Streamlit, Groq (Llama 3.1), and SQLite — every NPC has a persistent memory, a live emotional state, and a relationship with you that grows (or deteriorates) with every message.
+Built with Streamlit, Groq (Qwen 3.8 27B), and SQLite — every NPC has a persistent memory, a live emotional state, and a relationship with you that grows (or deteriorates) with every message.
 
 ---
 
@@ -99,7 +99,7 @@ All messages are saved to SQLite and reloaded on return visits. The last 50 mess
 | Layer | Technology |
 |---|---|
 | UI | [Streamlit](https://streamlit.io) |
-| LLM | [Groq API](https://console.groq.com) — `llama-3.1-8b-instant` |
+| LLM | [Groq API](https://console.groq.com) — `qwen/qwen3.8-27b` |
 | Database | SQLite (via Python `sqlite3`) |
 | Config | `python-dotenv` |
 | NPC data | Static JSON (`data/npcs.json`) |
@@ -210,7 +210,7 @@ get_relationship()     ← live relationship axes from SQLite
 build_prompt()         ← assembles everything into a single system prompt
         │
         ▼
-generate_response()    ← sends to Groq (Llama 3.1), gets back JSON
+generate_response()    ← sends to Groq (Qwen 3.8 27B), gets back JSON
         │
         ├── reply          → displayed in chat
         ├── emotion_delta  → update_emotions() clamps and saves to SQLite
@@ -229,7 +229,7 @@ All in `config/settings.py`:
 
 | Constant | Default | What it controls |
 |---|---|---|
-| `GROQ_MODEL` | `llama-3.1-8b-instant` | LLM model (override in `.env`) |
+| `GROQ_MODEL` | `qwen/qwen3.8-27b` | LLM model (override in `.env`) |
 | `MEMORY_CONTEXT_COUNT` | `5` | How many memories are injected per prompt |
 | `RAG_TOP_K` | `3` | How many campus context items are retrieved |
 | `STAT_MIN` / `STAT_MAX` | `0` / `100` | Emotion and relationship value bounds |
